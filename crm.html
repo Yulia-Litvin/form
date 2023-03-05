@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>crm</title>
+</head>
+<body class="body">
+    <form class="form" action="#">
+    <fieldset class="form__box">
+        <legend class="form__title-box"> Добавить товар</legend>
+        
+        <div class="content">
+            <label class="form__label" for="name-field">Наименование</label>
+            <input class ="form__input" type="text" name="name" id ="name-field" required>
+        
+
+            <label class="form__label" for="category-field">Категори</label>
+                <input class ="form__input" type="text" name="category" id="category-field" required>
+            
+
+            <label class="form__label" for="units-field">Единицы измерени</label>
+                <input class ="form__input" type="text" name="units" id="units-field" required>
+        
+
+            <label class="form__label" for="discount-field">Дисконт</label>
+            
+            <div class="form__discount checkbox">
+                <input class="checkbox__input" type="checkbox" aria-label="add-discount">
+                <input class="checkbox__field" type="text" name="discount" id="discount-field" required disabled>
+            </div>
+        
+
+            <label class="form__label textarea" for="description-field">Описание</label>
+            <textarea class ="form__input" name="description" cols="20" rows="7" id="description-field" required>
+            </textarea>
+        
+
+            <label  class="form__label" for="count-field">Количество</label>
+                <input class ="form__input" type="number" name="count" id="count-field" required>
+        
+
+            <label class="form__label" for="price-field">Цена</label>
+            <input class ="form__input" type="number" name="price" id="price-field" required>
+        </div>
+            <a class="form__button" href="#">Добавить товар</a>
+
+        </fieldset>
+    
+</form>
+</body>
+</html>
