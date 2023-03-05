@@ -26,6 +26,10 @@ html {
     box-sizing: inherit;
 }
 
+textarea {
+    resize: none;
+}
+
 .form {
     max-width: 792px;
     padding:32px 106px 99px;
@@ -148,6 +152,6 @@ border: 0;
     opacity: 1;
 }
 
-textarea {
-    resize: none;
+.checkbox__input:checked + .checkbox__field {
+    background-color: #F4F2FF;
 }
