@@ -8,33 +8,35 @@
     <title>crm</title>
 </head>
 <body class="body">
-    <form class="form" action="#" method="post">
+    <div class="overlay">
+        <div class="modal">
+            <button class="modal__close" type="button" aria-label="Закрыть">&#10006;</button>
+            <h2 class="modal__title"> Добавить товар</h2>
+    <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
     <fieldset class="form__box">
-        <legend class="form__title-box"> Добавить товар</legend>
-        
-        <div class="content">
+        <div class="form">
             <label class="form__label" for="name-field">Наименование</label>
             <input class ="form__input" type="text" name="name" id ="name-field" required>
         
 
-            <label class="form__label" for="category-field">Категори</label>
+            <label class="form__label" for="category-field">Категория</label>
                 <input class ="form__input" type="text" name="category" id="category-field" required>
             
 
-            <label class="form__label" for="units-field">Единицы измерени</label>
+            <label class="form__label" for="units-field">Единицы измерения</label>
                 <input class ="form__input" type="text" name="units" id="units-field" required>
         
 
             <label class="form__label" for="discount-field">Дисконт</label>
             
-            <div class="form__discount checkbox">
-                <input class="checkbox__input" type="checkbox" aria-label="add-discount">
-                <input class="checkbox__field" type="text" name="discount" id="discount-field" required disabled>
+            <div class="form__two-columns">
+                <input class="form__checkbox" type="checkbox" aria-label="add-discount">
+                <input class="form__input" type="text" name="discount" id="discount-field" required disabled>
             </div>
         
 
-            <label class="form__label textarea" for="description-field">Описание</label>
-            <textarea class ="form__input" name="description" cols="20" rows="7" id="description-field" required>
+            <label class="form__label" for="description-field">Описание</label>
+            <textarea class ="form__input" name="description" cols="20" rows="5" id="description-field" required>
             </textarea>
         
 
@@ -45,10 +47,10 @@
             <label class="form__label" for="price-field">Цена</label>
             <input class ="form__input" type="number" name="price" id="price-field" required>
         </div>
-            <a class="form__button" href="#">Добавить товар</a>
-
         </fieldset>
-    
+        <button class="form__button" type="submit">Добавить товар</button> 
 </form>
+</div>
+</div>
 </body>
 </html>
